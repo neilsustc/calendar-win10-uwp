@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="HelloWorld.Views.AboutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="About" Margin="24" FontSize="48" Foreground="#FF0078D7"/>
+        <TextBlock Text="Version: 0.2 beta&#13;&#13;Notable changes:&#13;    More accurate timekeeper in homepage.&#13;    Little UI adjustments.&#13;    Some bug fixes.&#13;    Some new bugs.&#13;&#13;Help:&#13;    All your data can be found in 'This computer/PictureLibrary/eventsData.txt'.&#13;&#13;To be expected:&#13;    Show how busy in recent days (calendar page).&#13;    Any unfinished assignments in Sakai?&#13;    ..." Margin="24,0" FontFamily="Courier New" FontSize="16"/>
+    </StackPanel>
+</Page>

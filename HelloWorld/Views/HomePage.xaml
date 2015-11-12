@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="HelloWorld.Views.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontFamily="Cambria" FontSize="20" Loaded="Page_Loaded" Unloaded="Page_Unloaded">
+
+    <ScrollViewer>
+        <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+            <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Text="Home" Margin="24" FontSize="48" Foreground="#FF0078D7"/>
+            <ProgressBar x:Name="progressBar" IsIndeterminate="True" Margin="24,0" Width="400" HorizontalAlignment="Left"/>
+            <StackPanel x:Name="placeHolder"/>
+            <StackPanel x:Name="calendarPanel" Margin="24,0,24,12">
+                <TextBlock x:Name="tbImpo" Text="Important" FontSize="30" Foreground="#FFC80000"/>
+                <StackPanel x:Name="importantEvents" Margin="0,6,0,12">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition/>
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                </StackPanel>
+                <TextBlock x:Name="tbMore" Text="More" FontSize="30" Foreground="#FF0078D7"/>
+                <StackPanel x:Name="moreEvents" Margin="0,6,0,12">
+                    <StackPanel.ChildrenTransitions>
+                        <TransitionCollection>
+                            <EntranceThemeTransition/>
+                        </TransitionCollection>
+                    </StackPanel.ChildrenTransitions>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

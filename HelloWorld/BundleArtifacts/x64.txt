@@ -1,0 +1,1 @@
+MainPackage=F:\Visual Studio 2015 Projects\HelloWorld\HelloWorld\bin\x64\Debug\HelloWorld_1.0.2.0_x64_Debug.appx
